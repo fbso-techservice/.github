@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentação da plataforma
+    url: https://github.com/fbso-techservice/platform
+    about: Standards de processo, engenharia, arquitetura e segurança
