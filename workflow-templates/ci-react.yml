@@ -1,6 +1,6 @@
 # Starter workflow — CI frontend React
 # Copiado para <produto>/.github/workflows/ no bootstrap.
-# A lógica de build real vive em platform (reusable workflow).
+# A lógica de build real vive em platform-standards (reusable workflow).
 name: CI Frontend (React)
 
 on:
@@ -10,4 +10,4 @@ on:
 
 jobs:
   call-platform:
-    uses: fbso-techservice/platform/.github/workflows/build-react.yml@main
+    uses: fbso-techservice/platform-standards/.github/workflows/build-react.yml@main

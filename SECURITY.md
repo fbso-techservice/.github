@@ -7,9 +7,9 @@ Política default da FBSO TechServices.
 A linha de base de segurança (LGPD, RBAC/SSO, multi-tenancy, auditoria) vive na
 plataforma — **fonte única, não duplicar**:
 
-- `platform/standards/security/SECURITY.md` — baseline
-- `platform/standards/security/lgpd-checklist.md`
-- `platform/standards/security/threat-model-template.md`
+- `platform-standards/standards/security/SECURITY.md` — baseline
+- `platform-standards/standards/security/lgpd-checklist.md`
+- `platform-standards/standards/security/threat-model-template.md`
 
 ## Reportando vulnerabilidades
 
@@ -18,5 +18,5 @@ afetado (aba **Security → Report a vulnerability**). Não abra issue pública.
 
 ## Gates no pipeline
 
-SAST, secret scan e ZAP rodam como reusable workflows da `platform` (ver
-`platform/.github/workflows/`). Os repositórios de produto os invocam via `uses:`.
+SAST, secret scan e ZAP rodam como reusable workflows da `platform-standards` (ver
+`platform-standards/.github/workflows/`). Os repositórios de produto os invocam via `uses:`.

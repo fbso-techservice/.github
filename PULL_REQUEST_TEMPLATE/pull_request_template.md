@@ -13,7 +13,7 @@
 
 ## Checklist
 - [ ] Testes passando
-- [ ] Convenção de commit seguida (ver platform/standards/engineering)
+- [ ] Convenção de commit seguida (ver platform-standards/standards/engineering)
 - [ ] Docs atualizadas (se aplicável)
 - [ ] Sem segredos/credenciais no diff
 

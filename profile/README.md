@@ -22,5 +22,5 @@ prestação de serviços em TI e Inteligência Artificial.
 
 ## Fundação de engenharia
 
-A [`platform`](https://github.com/fbso-techservice/platform) é o "como" entregamos:
+A [`platform-standards`](https://github.com/fbso-techservice/platform-standards) é o "como" entregamos:
 standards, CI/CD, GitOps, IaC e observabilidade compartilhados entre todos os produtos.

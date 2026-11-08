@@ -4,33 +4,46 @@
 
 ```
 github.com/fbso-techservice/
-├── .github/          metadados/templates da org (este repo)
-├── platform/         fundação de engenharia (transversal)
-└── saas-<produto>/   1 repo por produto (monorepo de produto)
+├── .github/              metadados da org (templates, health)
+├── platform-standards/   constituição corporativa (padrões, regras, blueprints)
+├── saas-<produto>/       produtos (monorepo de produto)
+├── svc-<domínio>/        soluções cross deployáveis (serviços)
+└── lib-<nome>/           soluções cross importáveis (SDKs/parsers)
 ```
+
+## Taxonomia de repositórios
+
+| Prefixo | Categoria | Critério |
+|---|---|---|
+| `.github` | metadados da org | templates, health files |
+| `platform-standards` | **constituição** | docs + blueprints, **não** roda código de negócio |
+| `saas-` | produto | vendável |
+| `svc-` | solução cross **deployável** | tem runtime/compliance |
+| `lib-` | solução cross **importável** | SDK/parser, sem runtime |
+| `client-` | projeto de consultoria | (futuro) |
 
 ## Regras
 
-1. **"Promover o genérico, manter o específico."** O que é igual entre ≥2 SaaS sobe
-   para `platform/`; cada produto guarda só o delta e **linka** (nunca copia).
-2. **Plataforma é produto.** `platform/` segue semver + changelog + ADRs; mudanças
-   são versionadas e os produtos fazem upgrade deliberado.
-3. **Um documento vive em um só lugar** ("ponteiros, não volume"). Links cross-repo
-   usam URL absoluta do GitHub.
-4. **Trunk-based + PR review obrigatório.** Convenções em `platform/standards/engineering/`.
+1. **"Promover o genérico, manter o específico."** O que é igual entre ≥2 SaaS sobe para
+   `platform-standards/`; cada produto guarda só o delta e **linka** (nunca copia).
+2. **Constituição é `platform-standards`.** Nenhum código de negócio cross entra nele —
+   deployável vai para `svc-*`, importável para `lib-*`.
+3. **Repo = fronteira de deploy + compliance + homologação.** Compliance isolável
+   (PCI-DSS, BCB, SEFAZ) ⇒ repo individual; mesmos protocolos/adapters ⇒ repo por família.
+4. **Um documento vive em um só lugar** ("ponteiros, não volume"). Links cross-repo usam
+   URL absoluta do GitHub.
+5. **Trunk-based + PR review obrigatório.** Convenções em
+   `platform-standards/standards/engineering/`.
 
-## Nomenclatura de repositórios
+## Contrato de solução
 
-| Prefixo | Categoria |
-|---|---|
-| `saas-` | Produtos SaaS próprios |
-| `platform` | Fundação interna (único) |
-| `.github` | Metadados da org (único) |
-| `client-` | Projetos de consultoria por cliente (futuro) |
+Toda solução `svc-*` publica: **contrato OpenAPI + client SDK + eventos/webhooks**.
+Consumidores usam o SDK, nunca chamam o fornecedor direto.
 
 ## Donos
 
 | Repo | Dono |
 |---|---|
-| `platform` | Tech lead + Arquitetura + Cloud & DevOps |
+| `platform-standards` | Tech lead + Arquitetura + Cloud & DevOps |
 | `saas-<produto>` | Squad do produto |
+| `svc-<domínio>` | Engenharia/Arquitetura (transversal) |

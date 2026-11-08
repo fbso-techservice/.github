@@ -9,8 +9,8 @@ organização — mas **não** é um repositório de código.
 | Pasta/arquivo | Papel |
 |---|---|
 | `profile/README.md` | Página pública da organização (`github.com/fbso-techservice`) |
-| `CONTRIBUTING.md` | Guia de contribuição default (linka `platform/standards`) |
-| `SECURITY.md` | Política de segurança default (linka `platform/standards/security`) |
+| `CONTRIBUTING.md` | Guia de contribuição default (linka `platform-standards/standards`) |
+| `SECURITY.md` | Política de segurança default (linka `platform-standards/standards/security`) |
 | `GOVERNANCE.md` | Governança: semver, ADR, donos, "promover genérico / manter específico" |
 | `ISSUE_TEMPLATE/` | Templates de issue default (bug, feature, user story) |
 | `PULL_REQUEST_TEMPLATE/` | Template de PR default |
@@ -18,7 +18,7 @@ organização — mas **não** é um repositório de código.
 
 ## O que NÃO vive aqui
 
-- **Reusable workflows / composite actions** → ficam em [`platform/.github/`](../platform/README.md)
+- **Reusable workflows / composite actions** → ficam em [`platform-standards/.github/`](../platform-standards/README.md)
   e são **chamados** via `uses:`, não copiados.
 - **`CODEOWNERS`** → não existe em nível de org; vai **por repositório**.
 
@@ -27,4 +27,4 @@ organização — mas **não** é um repositório de código.
 | Mecanismo | Onde | Chamado ou copiado? |
 |---|---|---|
 | `workflow-templates/` (aqui) | este repo | **copiado** 1× no bootstrap |
-| reusable workflows (`on: workflow_call`) | `platform/.github/workflows/` | **chamado** em runtime via `uses:` |
+| reusable workflows (`on: workflow_call`) | `platform-standards/.github/workflows/` | **chamado** em runtime via `uses:` |
