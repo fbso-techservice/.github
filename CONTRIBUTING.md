@@ -6,7 +6,7 @@ Guia de contribuição default da FBSO TechServices.
 
 As regras completas vivem na **plataforma** (fonte única — não duplicar aqui):
 
-- **Processo (agile/waterfall):** `platform-standards/standards/process/`
+- **Processo (agile/waterfall):** `platform-standards/standards/agile/`
 - **Engenharia (coding standards, commits, branches):** `platform-standards/standards/engineering/`
 - **Arquitetura (guardrails: tenant_id, RLS, API-First):** `platform-standards/standards/architecture/`
 

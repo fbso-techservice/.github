@@ -25,4 +25,4 @@ Então {resultado}
 
 ## Notas técnicas / enablers
 
-<!-- seguir o padrão em platform-standards/standards/process/ -->
+<!-- seguir o padrão em platform-standards/standards/agile/ -->
