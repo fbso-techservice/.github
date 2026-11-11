@@ -10,6 +10,6 @@ on:
 
 jobs:
   call-platform:
-    uses: fbso-techservice/platform-standards/.github/workflows/build-java-quarkus.yml@main
+    uses: fbso-techsolutions/platform-standards/.github/workflows/build-java-quarkus.yml@main
     with:
       java-version: "25"

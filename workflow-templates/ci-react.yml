@@ -10,4 +10,4 @@ on:
 
 jobs:
   call-platform:
-    uses: fbso-techservice/platform-standards/.github/workflows/build-react.yml@main
+    uses: fbso-techsolutions/platform-standards/.github/workflows/build-react.yml@main

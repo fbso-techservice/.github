@@ -1,6 +1,6 @@
 # `.github` — repositório da organização
 
-Este é o repositório **especial** da org (`github.com/fbso-techservice/.github`).
+Este é o repositório **especial** da org (`github.com/fbso-techsolutions/.github`).
 O GitHub usa o conteúdo daqui como **default** para todos os repositórios da
 organização — mas **não** é um repositório de código.
 
@@ -8,7 +8,7 @@ organização — mas **não** é um repositório de código.
 
 | Pasta/arquivo | Papel |
 |---|---|
-| `profile/README.md` | Página pública da organização (`github.com/fbso-techservice`) |
+| `profile/README.md` | Página pública da organização (`github.com/fbso-techsolutions`) |
 | `CONTRIBUTING.md` | Guia de contribuição default (linka `platform-standards/standards`) |
 | `SECURITY.md` | Política de segurança default (linka `platform-standards/standards/security`) |
 | `GOVERNANCE.md` | Governança: semver, ADR, donos, "promover genérico / manter específico" |

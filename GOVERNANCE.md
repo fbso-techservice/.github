@@ -3,7 +3,7 @@
 ## Topologia
 
 ```
-github.com/fbso-techservice/
+github.com/fbso-techsolutions/
 ├── .github/              metadados da org (templates, health)
 ├── platform-standards/   constituição corporativa (padrões, regras, blueprints)
 ├── saas-<produto>/       produtos (monorepo de produto)
